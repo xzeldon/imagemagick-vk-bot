@@ -10,11 +10,13 @@ For example, two commands are currently implemented:
 
 First of all, preferably you should [install ImageMagick from source](https://imagemagick.org/script/install-source.php#linux).
 
-You must also have the developer tools installed to compile C/C++ like GCC (if you use debian/ubuntu just type ``` apt install build-essential``` in terminal).
+You must also have the developer tools installed to compile C/C++ like GCC (if you use debian/ubuntu just type ```apt install build-essential``` in terminal).
 
 Then just clone this repository. Type ```npm i``` and all the dependencies will install.
 
-Once you do that, you're almost up and running. Type ``` npm run build ```. This will build the bot and put the output files in the dist folder.
+Once you do that, you're almost up and running. Type ```npm run build```. This will build the bot and put the output files in the dist folder.
 
-Finally, just go into the dist folder, and type ```npm start```.
+Now you need to set the token. You can hard-set it in the code (line 13), or export it as an environment variable (which I recommend doing). To do this, type ```export TOKEN=your_token```
+
+Finally, just type ```node dist/index.js```.
 
