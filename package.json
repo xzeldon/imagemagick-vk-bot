@@ -1,0 +1,35 @@
+{
+ "name": "zeldondev",
+ "version": "1.0.0",
+ "description": "Sample text",
+ "license": "MIT",
+ "author": {
+  "name": "Timofey (zeldon)",
+  "email": "contact@zeldon.ru"
+ },
+ "main": "lib/index",
+ "module": "lib/index.mjs",
+ "types": "lib/index.d.ts",
+ "engines": {
+  "node": ">=12.0.0"
+ },
+ "devDependencies": {
+  "@types/node": "^14.14.20",
+  "@typescript-eslint/eslint-plugin": "^4.12.0",
+  "@typescript-eslint/parser": "^4.12.0",
+  "eslint": "^7.17.0",
+  "eslint-config-airbnb-base": "^14.2.1",
+  "eslint-plugin-import": "^2.22.1",
+  "rollup": "^2.36.1",
+  "rollup-plugin-typescript2": "^0.29.0",
+  "typedoc": "^0.20.13",
+  "typescript": "^4.1.3"
+ },
+ "scripts": {
+  "build": "yarn rollup:build",
+  "watch": "yarn rollup:watch",
+  "rollup:build": "rollup -c",
+  "rollup:watch": "yarn run rollup:build --watch",
+  "docs:generate": "typedoc --theme default --out docs/reference --excludeExternals --readme none src"
+ }
+}
