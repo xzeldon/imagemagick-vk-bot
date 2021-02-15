@@ -8,7 +8,7 @@ import pkg from './package.json';
 const cacheRoot = pathJoin(tmpdir(), '.rpt2_cache');
 
 const src = pathJoin(__dirname, 'src');
-const lib = pathJoin(__dirname, 'lib');
+const dist = pathJoin(__dirname, 'dist');
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -20,7 +20,7 @@ export default {
 			useTsconfigDeclarationDir: false,
 
 			tsconfigOverride: {
-				outDir: lib,
+				outDir: dist,
 				rootDir: src,
 				include: [src]
 			}

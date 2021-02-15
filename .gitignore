@@ -6,7 +6,8 @@ logs
 node_modules
 
 # Build
-lib
+dist
+build
 
 # vscode
 .vscode/*
