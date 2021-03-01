@@ -6,7 +6,7 @@ For example, two commands are currently implemented:
 * liquid — distorts the image using the Seam Carving algorithm.
 
 ## Setup
-**Windows is now supported platform! Use [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) if you want to run the bot on Windows!**
+**Windows is not supported platform! Use [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) if you want to run the bot on Windows!**
 
 First of all, preferably you should [install ImageMagick from source](https://imagemagick.org/script/install-source.php#linux).
 
